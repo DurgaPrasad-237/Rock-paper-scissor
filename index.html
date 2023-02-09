@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ROCK PAPER SCISSOR</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="parent"> 
+                <div class="items">
+                    <h5 style="color:white;text-align: center;">PLAYER</h5>
+                    <div class="score">
+                        
+                        <table>
+                            <tr>
+                                <td><p class="name">ROCK<br> PAPER<br> SCISSOR</p></td>
+                                <td><div class="score2"><p>score</p><p id="ps" class="score-size">0</p></div></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    
+                    <div class="grd">
+                        <div onclick="rock()" class="rock"><img src="fist.png"></div>
+                        <div onclick ="scissor()" class="scissor"><img src="peace.png"></div>
+                        <div  onclick="paper()" class="paper"><img id="xx" src="hello.png" height="50px"></div>
+                      </div>
+
+                </div>
+
+                <div class="final-scorecard">
+                    <h3 class="wnr">Winner</h3>
+                    <div class="result"><img id="imgwinner" src="" height="80px"></div>   
+                    <div id="tie"></div>
+                </div>
+
+                <div class="items2">
+                    <h5 style="color:white;text-align: center;">SYSTEM</h5>
+                    <div class="score">
+                        <table>
+                            <tr>
+                                <td><p class="name">ROCK<br> PAPER<br> SCISSOR</p></td>
+                                <td><div class="score2"><p>score</p><p id="cs" class="score-size">0</p></div></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="grd">
+                        <div class="player1-result"><img id="player-result" src="man.png"></div>
+                        <div class="stop-grd"><button onclick="stop()" class="stop">stop</button></div>
+                        <div class="system-result"><img id="computer" src="assistant.png"></div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="RPS.js"></script>
+    </body>
+
+</html>
